@@ -129,3 +129,18 @@ h1 { margin: 25px 0 20px; font-size: clamp(42px, 5.2vw, 66px); line-height: 1.12
 .education-list article small { color: #858fa0; font-size: 12px; }
 .language-note { color: var(--muted); font-size: 13px; margin: 0; }
 @media (max-width: 680px) { .experience-item, .education-grid { grid-template-columns: 1fr; gap: 10px; } .experience-item { padding: 23px 0; } .education-grid { gap: 24px; } }
+
+
+/* Resume update: AI / GenAI skill card and professional development */
+.icon-purple { background: #f0eaff; color: #7045c5; }
+.skills-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.learning-content { min-width: 0; }
+.learning-topics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 22px; margin: 18px 0 0; padding-left: 18px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+.learning-topics li::marker { color: var(--blue); }
+@media (max-width: 900px) {
+  .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 680px) {
+  .skills-grid { grid-template-columns: 1fr; }
+  .learning-topics { grid-template-columns: 1fr; }
+}
